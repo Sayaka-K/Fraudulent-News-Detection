@@ -9,6 +9,7 @@ Specifically, the project consists of the following parts:
   + Pre-processing: removal of stop words (e.g., "the", "a", "an", and "in")
   + Text visualization: bar plots/ word clouds of frequent words for each feature column
   + Sentiment analysis: creation of sentiment features (i.e., <i>positive, negative, neutral</i>) using polarity scores  
+<br>
 * **Modeling**:<br>
 We first built the Logistic Regressions using different sets of features: 
   + Title Sentiments
@@ -20,10 +21,8 @@ We first built the Logistic Regressions using different sets of features:
 Since the combined feature of Title and Text demonstrated competency, we used this feature for training non-linear models. In particular, the following models:
     + Decision Tree
     + Neural Network (MLP) <br>
-<br>
-Lastly, we tried something different; while the models mentioned so far based on the skip-gram word embedding method, now we wanted to observe if the performance differs by using another word embedding technique: Continuous Bag of Words (CBOW). 
-  
-
+  Lastly, we tried something different; while the models mentioned so far based on the skip-gram word embedding method, now we wanted to observe if the performance differs by using another word embedding technique: Continuous Bag of Words (CBOW). 
+<br>  
 * **Model Comparison**: As the dataset was fairly balanced (i.e., 22,850 fake records and 21,416 real records), we defined the measurement of goodness to be accuracy. Among the models trained with skip-gram and the model trained with CBOW, the highest performing models on the validation dataset were the logistic regression and MLP with the combined feature of Title & Text constructed using skip-gram. Further, we introduced a new dataset from Kaggle containing fake & real news records to test the models' performance, where the logistic classifier led to the highest accuracy.  
 
 
