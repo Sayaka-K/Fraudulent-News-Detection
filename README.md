@@ -34,6 +34,5 @@ Below are the folders and files created for this project:<br>
   + kaggle_dataset.csv: data containing both fraudulent and real news records, used for testing the model performance<br><br>
 * **Fake_News_code.ipynb**: This is the script that performs everything from the preliminaries to model comparison<br><br>
 * **Fake_News_code.html**: html file of the code for a quick view
-
 <br>
 For the complete methodologies, results, and discussion, please see <b>Model Analysis to Provide Aid in Detecting Fake News.pdf</b>. 
