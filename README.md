@@ -7,7 +7,7 @@ Specifically, the project consists of the following parts:
 * **Preliminaries**: 
   + Exploratory analysis: examination of data and exclusion of non-useful records  
   + Pre-processing: removal of stop words (e.g., "the", "a", "an", and "in")
-  + Text visualization: bar plots/ word clouds of most frequent words for each feature column
+  + Text visualization: bar plots/ word clouds of frequent words for each feature column
   + Sentiment analysis: creation of sentiment features (i.e., <i>positive, negative, neutral</i>) using polarity scores  
 * **Modeling**:<br>
 We first built the Logistic Regressions using different sets of features: 
@@ -17,10 +17,10 @@ We first built the Logistic Regressions using different sets of features:
   + Title (transformed into embedding vectors using Word2Vec embedding model with skip-gram method)
   + Text (transformed into embedding vectors using Word2Vec embedding model with skip-gram method)
   + Title & Text (concatenated Title and Text vector representations)<br><br>
-Since the combined feature of Title and Text demonstrated competency, we used this feature for training non-linear models.<br>
-In particular, the following models:
-  * Decision Tree
-  * Neural Network (MLP) <br><br>
+Since the combined feature of Title and Text demonstrated competency, we used this feature for training non-linear models. In particular, the following models:
+    + Decision Tree
+    + Neural Network (MLP) <br>
+<br>
 Lastly, we tried something different; while the models mentioned so far based on the skip-gram word embedding method, now we wanted to observe if the performance differs by using another word embedding technique: Continuous Bag of Words (CBOW). 
   
 
